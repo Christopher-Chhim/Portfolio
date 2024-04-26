@@ -1,0 +1,60 @@
+:root {
+    --blue: beige;
+    --black: black;
+    --red: red;
+    --border-radius: 20 px;
+
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+
+
+header{
+    padding: 20px;
+    text-align: center;
+    background: var(--blue);
+    color: var(--black);
+}
+
+nav{
+    display: flex;
+    background-color: var(--red);
+}
+
+nav a:hover {
+    background-color: antiquewhite;
+    color: var(--blue);
+}
+
+.about {
+    flex: auto;
+    background-color: antiquewhite;
+    padding: 80px;
+}
+
+.work {
+    flex: auto;
+    background-color: antiquewhite;
+    padding: 80px;
+}
+
+.mission {
+    flex: auto;
+    background-color: antiquewhite;
+    padding: 80px;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+}
